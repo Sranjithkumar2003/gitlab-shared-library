@@ -1,41 +1,24 @@
 pipeline {
 	agent any
 	stages {
-		stage('One') {
+	
+		stage ('Test') {
 			steps {
-				echo 'Hi, this is Soumitra from roytuts'
+				echo 'Hi, this is Ranjith'
 			}
 		}
-		/*
-		stage('Two') {
+		stage ('Build') {
 			steps {
-				input('Do you want to proceed?')
+			    
+			    echo "Running Build Pipeline"
 			}
+
+		          
 		}
 		
-		stage('Build') {
-            steps {
-                bat './gradlew build'
-            }
-        }
-        
-        stage('Test') {
-            steps {
-                bat './gradlew test'
-            }
-        }
-        
-        stage('Check') {
-            steps {
-                bat './gradlew check'
-            }
-        }      
-		
-		stage('Five') {
-			steps {
-				echo 'Finished'
-			}
-		}	
-		*/	
+		stage ('Test') {
+		          
+		}
+
 	}
 }
